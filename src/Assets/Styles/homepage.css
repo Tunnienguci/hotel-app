@@ -1,0 +1,165 @@
+body{
+    background: url(../Images/bg.webp);
+    background-size: cover;
+}
+
+.homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    color: var(--secondary-color);
+}
+
+.homepage h1{
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.homepage p{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1%;
+}
+
+.centerHomepage{
+    width: 60%;
+    height: 20%;
+}
+
+.formHomepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 10%;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.locationItem h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.locationItem p{
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+#imgicon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1%;
+}
+
+.locationItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.locationItemLeft{
+    padding: 1%;
+    margin-right: 5%;
+}
+
+.formLocation h1{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+    color: #444444;
+}
+.formDate h1{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+    color: #444444;
+}
+
+.formGuest h1{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 2%;
+    color: #444444;
+}
+
+.vline{
+    border-left: 1.5px solid #c4c4c4;
+    height: 60%;
+}
+
+.btn-search{
+    background-color: black;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 8%;
+    font-size: 1rem;
+    width: 8rem;
+}
+
+.bottomHomepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 10%;
+    margin-top: 5%;
+    bottom: 0 !important;
+}
+
+
+.bottomHomepage .brand-img{
+    width: 8rem;
+}
+
+
+/* Edit ant */
+.ant-select-selector{
+    border: none !important;
+}
+
+.ant-select-selector:focus{
+    border: none !important;
+}
+
+.ant-select-selector:hover{
+    border: none !important;
+}
+
+.ant-select-selector:hover .ant-select-selection-item{
+    border: none !important;
+}
+
+.ant-picker{
+    border: none !important;
+}
+
+.ant-picker:hover{
+    border: none !important;
+}
+
+.ant-picker:hover .ant-picker-input{
+    border: none !important;
+}
+
+.ant-picker-input{
+    border: none !important;
+}
+
+.ant-picker-input:hover{
+    border: none !important;
+}

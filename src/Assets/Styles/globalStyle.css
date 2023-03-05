@@ -1,0 +1,58 @@
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+.header .leftHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 5%;
+}
+
+.header .leftHeader img{
+    width: 20%;
+    height: 20%;
+    margin: 5%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: var(--secondary-color);
+
+}
+.header a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.header h1{
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.header .rightHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 10%;
+}
+
+#typePriceitem{
+    font-weight: 600;
+}
+
+#typePrice{
+    width: 40px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+    
