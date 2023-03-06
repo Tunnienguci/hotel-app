@@ -1,13 +1,9 @@
 import React from "react";
 import "../Assets/Styles/globalStyle.css";
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+import { Select, Space } from "antd";
 
 // Images
 import logo from "../Assets/Images/logo.png";
-
 const typePrice = [
   {
     value: 'USD',
@@ -38,10 +34,7 @@ function Header() {
   const handleChange = (event) => {
     setPrice(event.target.value);
   };
-  const Price = typePrice.map((e)=>
-    <MenuItem value={e.value}><span id="typePriceitem">{e.value}</span></MenuItem>
-  );
-
+  
   return (
     <div className="header">
       <div className="leftHeader">
@@ -49,16 +42,20 @@ function Header() {
       </div>
       <div className="rightHeader">
         <a href="#">Sign in</a>
-        <FormControl sx={{ m: 1, minWidth: 10,}} size="small">
-          <InputLabel id="typePrice"></InputLabel>
+        <Space wrap>
           <Select
-            id="typePrice"
-            defaultValue={typePrice[0].value}
+            defaultValue="USD"
+            style={{
+              width: 100,
+            }}
             onChange={handleChange}
-          >
-            {Price}
-          </Select>
-        </FormControl>
+            options={typePrice.map((typePrice) => ({
+              value: typePrice.value,
+              label: typePrice.value,
+            }))
+            }
+          />
+        </Space>
       </div>
     </div>
   );

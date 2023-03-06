@@ -1,0 +1,104 @@
+.hotel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.hoteGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+.hotelSort{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hotelList{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hotelListTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hotelCard{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 15rem;
+    margin: 1rem 0;
+}
+
+.hotelCard img{
+    width: 20rem !important;
+    height: 15rem;
+    padding: 0.5rem;
+    border-radius: 15px !important;
+    object-fit: cover;
+}
+
+.hotel .ant-card-body{
+    padding: 0 !important;
+}
+
+.hotelCardInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 1rem;
+}
+
+.hotelCardInfo h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.hotelCardInfo h3{
+    font-size: 1rem;
+    color: #8c8c8c;
+    font-weight: 500;
+}
+
+.hotelCardInfo h4{
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-weight: 500;
+}
+
+.imgItem{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hotelCardButton{
+    width: 15rem;
+    padding: 3%;
+    margin: 3%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
