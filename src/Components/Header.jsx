@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Assets/Styles/globalStyle.css";
 import { Select, Space } from "antd";
 
@@ -8,31 +8,35 @@ const typePrice = [
   {
     value: 'USD',
     label: 'Unitest States Dollar',
+    money: 1
   },
   {
     value: 'VND',
     label: 'Vietnam Dong',
+    money: 23709
   },
   {
     value: 'EUR',
     label: 'Euro',
+    money: 0.93
   },
   {
     value: 'AUD',
     label: 'Australia Dollar',
+    money: 1.49
   },
   {
     value: 'THB',
     label: 'Thai Bath',
+    money: 34.57
   }
 ];
 
 
 
 function Header() {
-  const [setPrice] = React.useState('');
-  const handleChange = (event) => {
-    setPrice(event.target.value);
+  const handleChange = (value) => {
+    return value;
   };
   
   return (

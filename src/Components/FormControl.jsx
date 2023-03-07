@@ -60,11 +60,27 @@ function FormControl() {
         setsecondRoom(value);
     };
 
-    const [setCities] = useState(cityData[provinceData[0]]);
-    const [setSecondCity] = useState(cityData[provinceData[0]][0]);
-    const handleProvinceChange = (value) => {
-        setCities(cityData[value]);
+    const [citiesData, setCitiesData] = useState(cityData[provinceData[0]]);
+    const [secondCity, setSecondCity] = useState(cityData[provinceData[0]][0]);
+    const onCityChange = (value) => {
+        setCitiesData(cityData[value]);
         setSecondCity(cityData[value][0]);
+    };
+
+    const onsecondCityChange1 = (value) => {
+        setSecondCity(value);
+    };
+
+    const handleSubmit = () => {
+        const data = {
+            province: value,
+            city: secondCity,
+            room: secondRoom,
+            checkin: dates[0].format("YYYY-MM-DD"),
+            checkout: dates[1].format("YYYY-MM-DD"),
+        };
+        // console.log(data);
+        window.location.href = "/hotel" + "?city=" + secondCity + "&room=" + secondRoom + "&checkin=" + dates[0].format("YYYY-MM-DD") + "&checkout=" + dates[1].format("YYYY-MM-DD");    
     };
     return(
     <div className="formHomepage">
@@ -72,17 +88,27 @@ function FormControl() {
             <h1>Location</h1>
             <Space wrap>
                 <Select
-                    defaultValue="Where are you going?"
+                    defaultValue={provinceData[0]}
                     style={{
-                        width: 300,
+                        width: 150,
                     }}
-                    onChange={handleProvinceChange}
+                    required
+                    onChange={onCityChange}
                     options={provinceData.map((province) => ({
-                        options: cityData[province].map((city) => ({
-                            value: city,
-                            label: city + ", " + province,
-                        })),
                         label: province,
+                        value: province,
+                    }))}
+                />
+                <Select
+                    defaultValue="Where are you going?"
+                    required
+                    style={{
+                        width: 200,
+                    }}
+                    onChange={onsecondCityChange1}
+                    options={citiesData.map((city) => ({
+                        label: city,
+                        value: city,
                     }))}
                 />
             </Space>
@@ -96,41 +122,44 @@ function FormControl() {
                     disabledDate={disabledDate}
                     onCalendarChange={(val) => setDates(val)}
                     onChange={(val) => setValue(val)}
+                    required
                     onOpenChange={onOpenChange}
                 />
             </Space>
         </div>
         <div className="vline"></div>
         <div className="formGuest">
-            <h1>Room and guests</h1>
-            <Space wrap>
-                <Select
-                    defaultValue={adult[0]}
-                    style={{
-                        width: 120,
-                    }}
-                    onChange={handleAdultChange}
-                    options={adult.map((adult) => ({
-                        label: adult + " Guest",
-                        value: adult,
-                    }))}
-                />
-                <Select
-                    style={{
-                        width: 120,
-                    }}
-                    value={secondRoom}
-                    onChange={onsecondRoomChange}
-                    options={roomes.map((room) => ({
-                        label: room + " Room",
-                        value: room,
-                    }))}
-                />
-            </Space>
-        </div>
-        <div className="formSearch">
-            <button className="btn-search" type="button">Search</button>
-        </div>
+                <h1>Room and guests</h1>
+                <Space wrap>
+                    <Select
+                        defaultValue={adult[0]}
+                        style={{
+                            width: 120,
+                        }}
+                        required
+                        onChange={handleAdultChange}
+                        options={adult.map((adult) => ({
+                            label: adult + " Guest",
+                            value: adult,
+                        }))}
+                    />
+                    <Select
+                        style={{
+                            width: 120,
+                        }}
+                        value={secondRoom}
+                        required
+                        onChange={onsecondRoomChange}
+                        options={roomes.map((room) => ({
+                            label: room + " Room",
+                            value: room,
+                        }))}
+                    />
+                </Space>
+            </div>
+            <div className="formSearch">
+                <button className="btn-search" onClick={handleSubmit}>Search</button>
+            </div>
     </div>
     );
 }

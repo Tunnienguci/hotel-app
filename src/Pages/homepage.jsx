@@ -19,16 +19,26 @@ const provinceData = [
     "Thailand",
     "Malaysia",
     "Singapore",
-    "Japan",
-    "United States",
+    "Laos",
+    "Indonesia",
+    "Myanmar",
+    "Cambodia",
+    "Philippines",
+    "Brunei",
+
 ];
 const cityData = {
-    Vietnam: ["Hanoi", "Ho Chi Minh City", "Da Nang"],
+    Vietnam: ["Hanoi", "Ho Chi Minh City", "Da Nang", "Sapa", "Hoi An", "Nha Trang", "Hue", "Ha Long Bay", "Da Lat", "Phu Quoc"],
     Thailand: ["Bangkok", "Pattaya", "Phuket"],
     Malaysia: ["Kuala Lumpur", "Penang", "Langkawi"],
     Singapore: ["Singapore"],
-    Japan: ["Tokyo", "Osaka", "Kyoto"],
-    "United States": ["New York", "Los Angeles", "San Francisco"],
+    Laos: ["Vientiane", "Luang Prabang", "Pakse"],
+    Indonesia: ["Bali", "Jakarta", "Yogyakarta"],
+    Myanmar: ["Yangon", "Mandalay", "Bagan"],
+    Cambodia: ["Siem Reap", "Phnom Penh", "Sihanoukville"],
+    Philippines: ["Manila", "Cebu", "Boracay"],
+    Brunei: ["Bandar Seri Begawan"],
+
 };
 
 const adult = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -45,32 +55,37 @@ const room = {
 
 // Images
 const typePrice = [
-  {
-    value: 'USD',
-    label: 'Unitest States Dollar',
-  },
-  {
-    value: 'VND',
-    label: 'Vietnam Dong',
-  },
-  {
-    value: 'EUR',
-    label: 'Euro',
-  },
-  {
-    value: 'AUD',
-    label: 'Australia Dollar',
-  },
-  {
-    value: 'THB',
-    label: 'Thai Bath',
-  }
+    {
+        value: 'USD',
+        label: 'Unitest States Dollar',
+        money: 1
+    },
+    {
+        value: 'VND',
+        label: 'Vietnam Dong',
+        money: 23709
+    },
+    {
+        value: 'EUR',
+        label: 'Euro',
+        money: 0.93
+    },
+    {
+        value: 'AUD',
+        label: 'Australia Dollar',
+        money: 1.49
+    },
+    {
+        value: 'THB',
+        label: 'Thai Bath',
+        money: 34.56
+    }
 ];
 
 
 function Homepage() {
     const handleChange1 = (value) => {
-        console.log(`selected ${value}`);
+        return value;
     };
     const [dates, setDates] = useState(null);
     const [value, setValue] = useState(null);
@@ -96,26 +111,30 @@ function Homepage() {
         setsecondRoom(value);
     };
 
-    const [setCities] = useState(cityData[provinceData[0]]);
-    const [setSecondCity] = useState(cityData[provinceData[0]][0]);
-    const handleProvinceChange = (value) => {
-        setCities(cityData[value]);
+    const [citiesData, setCitiesData] = useState(cityData[provinceData[0]]);
+    const [secondCity, setSecondCity] = useState(cityData[provinceData[0]][0]);
+    const onCityChange = (value) => {
+        setCitiesData(cityData[value]);
         setSecondCity(cityData[value][0]);
     };
 
+    const onsecondCityChange1 = (value) => {
+        setSecondCity(value);
+    };
 
     const handleSubmit = () => {
         const data = {
-            city: setSecondCity,
+            province: value,
+            city: secondCity,
             room: secondRoom,
             checkin: dates[0].format("YYYY-MM-DD"),
             checkout: dates[1].format("YYYY-MM-DD"),
         };
-        console.log(data);
-        window.location.href = "/hotel" + "?city=" + setSecondCity + "&room=" + secondRoom + "&checkin=" + dates[0].format("YYYY-MM-DD") + "&checkout=" + dates[1].format("YYYY-MM-DD");
+        // console.log(data);
+        window.location.href = "/hotel" + "?city=" + secondCity + "&room=" + secondRoom + "&checkin=" + dates[0].format("YYYY-MM-DD") + "&checkout=" + dates[1].format("YYYY-MM-DD");
 
 
-        
+
     };
 
     return (
@@ -128,16 +147,16 @@ function Homepage() {
                     <a href="#">Sign in</a>
                     <Space wrap>
                         <Select
-                        defaultValue="USD"
-                        style={{
-                            width: 100,
-                        }}
-                        onChange={handleChange1}
-                        options={typePrice.map((typePrice) => ({
-                            value: typePrice.value,
-                            label: typePrice.value,
-                        }))
-                        }
+                            defaultValue="USD"
+                            style={{
+                                width: 100,
+                            }}
+                            onChange={handleChange1}
+                            options={typePrice.map((typePrice) => ({
+                                value: typePrice.value,
+                                label: typePrice.value,
+                            }))
+                            }
                         />
                     </Space>
                 </div>
@@ -147,71 +166,83 @@ function Homepage() {
                 <p>Get 30-75% off the best publicly available rates</p>
             </div>
             <div className="formHomepage">
-        <div className="formLocation">
-            <h1>Location</h1>
-            <Space wrap>
-                <Select
-                    defaultValue="Where are you going?"
-                    style={{
-                        width: 300,
-                    }}
-                    options={provinceData.map((province) => ({
-                        options: cityData[province].map((city) => ({
-                            value: city,
-                            label: city + ", " + province,
-                        })),
-                        onOpenChange: handleProvinceChange,
-                        label: province,
-                    }))}
-                    onChange={handleProvinceChange}
-                />
-            </Space>
-        </div>
-        <div className="vline"></div>
-        <div className="formDate">
-            <h1>Date</h1>
-            <Space direction="vertical" aria-selected="true" size={12}>
-                <RangePicker
-                    value={dates || value}
-                    disabledDate={disabledDate}
-                    onCalendarChange={(val) => setDates(val)}
-                    onChange={(val) => setValue(val)}
-                    onOpenChange={onOpenChange}
-                />
-            </Space>
-        </div>
-        <div className="vline"></div>
-        <div className="formGuest">
-                <h1>Room and guests</h1>
-                <Space wrap>
-                    <Select
-                        defaultValue={adult[0]}
-                        style={{
-                            width: 120,
-                        }}
-                        onChange={handleAdultChange}
-                        options={adult.map((adult) => ({
-                            label: adult + " Guest",
-                            value: adult,
-                        }))}
-                    />
-                    <Select
-                        style={{
-                            width: 120,
-                        }}
-                        value={secondRoom}
-                        onChange={onsecondRoomChange}
-                        options={roomes.map((room) => ({
-                            label: room + " Room",
-                            value: room,
-                        }))}
-                    />
-                </Space>
+                <div className="formLocation">
+                    <h1>Location</h1>
+                    <Space wrap>
+                        <Select
+                            defaultValue={provinceData[0]}
+                            style={{
+                                width: 150,
+                            }}
+                            required
+                            onChange={onsecondCityChange1}
+                            options={provinceData.map((province) => ({
+                                label: province,
+                                value: province,
+                            }))}
+                        />
+                        <Select
+                            defaultValue="Where are you going?"
+                            required
+                            style={{
+                                width: 200,
+                            }}
+                            onChange={onsecondCityChange1}
+                            options={citiesData.map((city) => ({
+                                label: city,
+                                value: city,
+                            }))}
+                        />
+                    </Space>
+                </div>
+                <div className="vline"></div>
+                <div className="formDate">
+                    <h1>Date</h1>
+                    <Space direction="vertical" aria-selected="true" size={12}>
+                        <RangePicker
+                            value={dates || value}
+                            disabledDate={disabledDate}
+                            onCalendarChange={(val) => setDates(val)}
+                            onChange={(val) => setValue(val)}
+                            required
+                            onOpenChange={onOpenChange}
+                        />
+                    </Space>
+                </div>
+                <div className="vline"></div>
+                <div className="formGuest">
+                    <h1>Room and guests</h1>
+                    <Space wrap>
+                        <Select
+                            defaultValue={adult[0]}
+                            style={{
+                                width: 120,
+                            }}
+                            required
+                            onChange={handleAdultChange}
+                            options={adult.map((adult) => ({
+                                label: adult + " Guest",
+                                value: adult,
+                            }))}
+                        />
+                        <Select
+                            style={{
+                                width: 120,
+                            }}
+                            value={secondRoom}
+                            required
+                            onChange={onsecondRoomChange}
+                            options={roomes.map((room) => ({
+                                label: room + " Room",
+                                value: room,
+                            }))}
+                        />
+                    </Space>
+                </div>
+                <div className="formSearch">
+                    <button className="btn-search" onClick={handleSubmit}>Search</button>
+                </div>
             </div>
-            <div className="formSearch">
-                <button className="btn-search" onClick={handleSubmit}>Search</button>
-            </div>
-        </div>
             <div className="bottomHomepage">
                 <img src={brand1} className="brand-img" alt="hotel" />
                 <img src={brand2} className="brand-img" alt="hotel" />

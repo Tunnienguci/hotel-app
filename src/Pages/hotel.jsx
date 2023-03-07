@@ -32,42 +32,35 @@ const hotel = [
     },
 ]
 
-function Hotel()
-{   
-
-    //Get hotel city, adult, checkin, checkout from url
+function Hotel() {
     const url = window.location.href;
     const urlStartSplit = url.split('&room='); //Split url by adult
     const urlEndSplit = urlStartSplit[1].split('&checkin='); //Split url by checkin
     const city = urlStartSplit[0].split('city=')[1]; //Get city
-    const room = urlEndSplit[0]; 
+    const room = urlEndSplit[0];
     const checkin = urlEndSplit[1].split('&checkout=')[0]; //Get checkin
     const checkout = urlEndSplit[1].split('&checkout=')[1]; //Get checkout
-    let totalPrice = 0;
+    let total = 0;
     const days = (Date.parse(checkout) - Date.parse(checkin)) / 86400000; //Calculate days
-    //Filter hotel by city
     const hotelFilter = hotel.filter((hotel) => hotel.city === city);
-
-
-
 
     return (
         <div className="hotel">
             <Header />
-            <FormControl/>
+            <FormControl />
             <div className="hoteGroup">
                 <div className="hotelSort">
-                   
+
                 </div>
                 <div className="hotelList">
                     <div className="hotelListTitle">
-                        <b>Homestay in {city} | Checkin: {checkin} - Check-out: {checkout}</b>
+                        <p>Homestay in <b>{city}</b> | Date: <b>{checkin} </b> to <b>{checkout}</b></p>
                         <p>
                             {hotelFilter.length} homestay available
                         </p>
                     </div>
                     {hotelFilter.map((hotel) => (
-                        totalPrice = hotel.price * days * room,
+                        total = hotel.price * days * room,
                         <Card
                             className='hotelCard'
                             hoverable
@@ -76,7 +69,7 @@ function Hotel()
                             <div className="hotelCardInfo">
                                 <h1>{hotel.name}</h1>
                                 <h3>{hotel.city}, {hotel.country}</h3>
-                                <h4>${totalPrice} for 2 room </h4>
+                                <h4>${total} for 2 room </h4>
                                 <p>${hotel.price} /night /room</p>
                                 <p>All including taxes and fees</p>
                                 <button className="hotelCardButton">See available rooms</button>
