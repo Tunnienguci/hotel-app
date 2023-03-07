@@ -5,22 +5,30 @@ import { DatePicker, Space } from "antd";
 import { Select } from "antd";
 
 const { RangePicker } = DatePicker;
-
 const provinceData = [
     "Vietnam",
     "Thailand",
     "Malaysia",
     "Singapore",
-    "Japan",
-    "United States",
+    "Laos",
+    "Indonesia",
+    "Myanmar",
+    "Cambodia",
+    "Philippines",
+    "Brunei",
 ];
+
 const cityData = {
-    Vietnam: ["Hanoi", "Ho Chi Minh City", "Da Nang"],
+    Vietnam: ["Hanoi", "Ho Chi Minh", "Da Nang", "Sapa", "Nha Trang", "Hue", "Phu Quoc"],
     Thailand: ["Bangkok", "Pattaya", "Phuket"],
     Malaysia: ["Kuala Lumpur", "Penang", "Langkawi"],
     Singapore: ["Singapore"],
-    Japan: ["Tokyo", "Osaka", "Kyoto"],
-    "United States": ["New York", "Los Angeles", "San Francisco"],
+    Laos: ["Vientiane", "Luang Prabang", "Pakse"],
+    Indonesia: ["Bali", "Jakarta", "Yogyakarta"],
+    Myanmar: ["Yangon", "Mandalay", "Bagan"],
+    Cambodia: ["Siem Reap", "Phnom Penh", "Sihanoukville"],
+    Philippines: ["Manila", "Cebu", "Boracay"],
+    Brunei: ["Bandar Seri Begawan"],
 };
 
 const adult = [1, 2, 3, 4, 5, 6, 7, 8];

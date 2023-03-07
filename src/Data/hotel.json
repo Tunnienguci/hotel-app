@@ -1,0 +1,245 @@
+[
+    {
+        "name": "Pull Man Hotel Hanoi",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "price": 175,
+        "rate": 4.5,
+        "cancel": "Free cancellation",
+        "image": "hn1"
+    },
+    {
+        "name": "Novotel Hanoi Hotel",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "price": 183,
+        "rate": 4.7,
+        "cancel": "Free cancellation",
+        "image": "hn2"
+    },
+    {
+        "name": "Sheraton Residence Hanoi",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "price": 118,
+        "rate": 5.0,
+        "cancel": "Free cancellation",
+        "image": "hn3"
+    },
+    {
+        "name": "Daewoo Hotel Hanoi",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "price": 120,
+        "rate": 4.1,
+        "cancel": "Free cancellation",
+        "image": "hn4"
+    },
+    {
+        "name": "JW Marriott Hotel Hanoi",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "price": 140,
+        "rate": 4.9,
+        "cancel": "Free cancellation",
+        "image": "hn5"
+    },
+    {
+        "name": "InterContinental Hanoi Westlake",
+        "city": "Hanoi",
+        "country": "Vietnam",
+        "price": 131,
+        "rate": 4.9,
+        "cancel": "Free cancellation",
+        "image": "hn6"
+    },
+    {
+        "name": "Landmark 81 Hotel",
+        "city": "Ho Chi Minh",
+        "country": "Vietnam",
+        "price": 89,
+        "rate": 4.4,
+        "cancel": "Free cancellation",
+        "image": "hcm1"
+    },
+    {
+        "name": "Rex Hotel Saigon",
+        "city": "Ho Chi Minh",
+        "country": "Vietnam",
+        "price": 123,
+        "rate": 4.4,
+        "cancel": "Free cancellation",
+        "image": "hcm2"
+    },
+    {
+        "name": "Majestic Saigon Hotel",
+        "city": "Ho Chi Minh",
+        "country": "Vietnam",
+        "price": 150,
+        "rate": 4.2,
+        "cancel": "Flexible cancellation",
+        "image": "hcm3"
+    },
+    {
+        "name": "Caravelle Hotel Saigon",
+        "city": "Ho Chi Minh",
+        "country": "Vietnam",
+        "price": 96,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "hcm4"
+    },
+    {
+        "name": "Renaissance Riverside",
+        "city": "Ho Chi Minh",
+        "country": "Vietnam",
+        "price": 190,
+        "rate": 4.1,
+        "cancel": "Flexible cancellation",
+        "image": "hcm5"
+    },
+    {
+        "name": "Muong Thanh Luxury DaNang Hotel",
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "price": 95,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "dn1"
+    },
+    {
+        "name": "Pullman DaNang Beach Resort",
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "price": 210,
+        "rate": 4.1,
+        "cancel": "Flexible cancellation",
+        "image": "dn2"
+    },
+    {
+        "name": "Novotel DaNang Premier Han River",
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "price": 105,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "dn3"
+    },
+    {
+        "name": "The Grand DaNang Hotel",
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "price": 80,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "dn4"
+    },
+    {
+        "name": "The Anam",
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "price": 87,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "dn5"
+    },
+    {
+        "name": "The Nam Hai",
+        "city": "Da Nang",
+        "country": "Vietnam",
+        "price": 121,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "dn6"
+    },
+    {
+        "name": "Vinpearl Resort & Spa Nha Trang",
+        "city": "Nha Trang",
+        "country": "Vietnam",
+        "price": 99,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "nt1"
+    },
+    {
+        "name": "Pullman Nha Trang Hotel",
+        "city": "Nha Trang",
+        "country": "Vietnam",
+        "price": 98,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "nt2"
+    },
+    {
+        "name": "InterContinental Nha Trang",
+        "city": "Nha Trang",
+        "country": "Vietnam",
+        "price": 110,
+        "rate": 4.3,
+        "cancel": "Flexible cancellation",
+        "image": "nt3"
+    },
+    {
+        "name": "Vinpearl Resort & Spa Phu Quoc",
+        "city": "Phu Quoc",
+        "country": "Vietnam",
+        "price": 130,
+        "rate": 4.5,
+        "cancel": "Flexible cancellation",
+        "image": "pq1"
+    },
+    {
+        "name": "Pullman Phu Quoc Beach Resort",
+        "city": "Phu Quoc",
+        "country": "Vietnam",
+        "price": 150,
+        "rate": 4.5,
+        "cancel": "Flexible cancellation",
+        "image": "pq2"
+    },
+    {
+        "name": "InterContinental Phu Quoc Long Beach Resort",
+        "city": "Phu Quoc",
+        "country": "Vietnam",
+        "price": 110,
+        "rate": 4.5,
+        "cancel": "Flexible cancellation",
+        "image": "pq3"
+    },
+    {
+        "name": "Bamboo Hotel Sapa",
+        "city": "Sapa",
+        "country": "Vietnam",
+        "price": 65,
+        "rate": 3.5,
+        "cancel": "Flexible cancellation",
+        "image": "sp1"
+    },
+    {
+        "name": "Paos Hotel Sapa",
+        "city": "Sapa",
+        "country": "Vietnam",
+        "price": 89,
+        "rate": 4.2,
+        "cancel": "Flexible cancellation",
+        "image": "sp2"
+    },
+    {
+        "name": "KK Hotel Sapa",
+        "city": "Sapa",
+        "country": "Vietnam",
+        "price": 69,
+        "rate": 4.1,
+        "cancel": "Free cancellation",
+        "image": "sp3"
+    },
+    {
+        "name": "Vinpearl Hue Resort & Spa",
+        "city": "Hue",
+        "country": "Vietnam",
+        "price": 79,
+        "rate": 4.7,
+        "cancel": "Free cancellation",
+        "image": "hu1"
+    }
+]

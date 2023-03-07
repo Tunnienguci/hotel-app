@@ -7,27 +7,23 @@
 }
 
 
-.hoteGroup{
+.hotelGroup{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60%;
+    width: 63%;
+    align-items: flex-start;
+    margin: 1rem 0;
 }
 
-.hotelSort{
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 
 .hotelList{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem;
 }
 
 .hotelListTitle{
@@ -71,7 +67,7 @@
 }
 
 .hotelCardInfo h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
 }
 
@@ -101,4 +97,142 @@
     color: white;
     border-radius: 5px;
     font-size: 1rem;
+}
+
+.hotelSort{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.hotelSort h3{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.hotelSortItem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+
+.PriceGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.PriceGroup table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    align-items: flex-start;
+}
+
+.PriceGroup table tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.PriceGroup table tr td input{
+    width: 100%;
+    height: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 2rem;
+}
+
+.SearchItem{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.SearchItem input{
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.Cancellation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Cancellation table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    align-items: flex-start;
+}
+
+.Cancellation table tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.Cancellation table tr td input{
+    width: 100%;
+    height: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 2rem;
+}
+
+
+.Rating{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Rating table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    align-items: flex-start;
+}
+
+.Rating table tr{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.Rating table tr td input{
+    width: 100%;
+    height: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 2rem;
 }

@@ -25,10 +25,10 @@ const provinceData = [
     "Cambodia",
     "Philippines",
     "Brunei",
-
 ];
+
 const cityData = {
-    Vietnam: ["Hanoi", "Ho Chi Minh City", "Da Nang", "Sapa", "Hoi An", "Nha Trang", "Hue", "Ha Long Bay", "Da Lat", "Phu Quoc"],
+    Vietnam: ["Hanoi", "Ho Chi Minh", "Da Nang", "Sapa", "Nha Trang", "Hue", "Phu Quoc"],
     Thailand: ["Bangkok", "Pattaya", "Phuket"],
     Malaysia: ["Kuala Lumpur", "Penang", "Langkawi"],
     Singapore: ["Singapore"],
@@ -38,7 +38,6 @@ const cityData = {
     Cambodia: ["Siem Reap", "Phnom Penh", "Sihanoukville"],
     Philippines: ["Manila", "Cebu", "Boracay"],
     Brunei: ["Bandar Seri Begawan"],
-
 };
 
 const adult = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -53,40 +52,10 @@ const room = {
     8: [4, 5, 6, 7, 8],
 };
 
-// Images
-const typePrice = [
-    {
-        value: 'USD',
-        label: 'Unitest States Dollar',
-        money: 1
-    },
-    {
-        value: 'VND',
-        label: 'Vietnam Dong',
-        money: 23709
-    },
-    {
-        value: 'EUR',
-        label: 'Euro',
-        money: 0.93
-    },
-    {
-        value: 'AUD',
-        label: 'Australia Dollar',
-        money: 1.49
-    },
-    {
-        value: 'THB',
-        label: 'Thai Bath',
-        money: 34.56
-    }
-];
 
 
 function Homepage() {
-    const handleChange1 = (value) => {
-        return value;
-    };
+
     const [dates, setDates] = useState(null);
     const [value, setValue] = useState(null);
     const minDate = new Date();
@@ -145,25 +114,11 @@ function Homepage() {
                 </div>
                 <div className="rightHeader">
                     <a href="#">Sign in</a>
-                    <Space wrap>
-                        <Select
-                            defaultValue="USD"
-                            style={{
-                                width: 100,
-                            }}
-                            onChange={handleChange1}
-                            options={typePrice.map((typePrice) => ({
-                                value: typePrice.value,
-                                label: typePrice.value,
-                            }))
-                            }
-                        />
-                    </Space>
                 </div>
             </div>
             <div className="centerHomepage">
                 <h1>Unlock Private Hotel Deals</h1>
-                <p>Get 30-75% off the best publicly available rates</p>
+                <p>All homestays in Southeast Asia get 30-75% off the best publicly available rates</p>
             </div>
             <div className="formHomepage">
                 <div className="formLocation">
