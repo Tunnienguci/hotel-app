@@ -185,7 +185,7 @@ function Hotel() {
                             <div className="hotelCardInfo">
                                 <h1>{hotel.name}</h1>
                                 <h3>{hotel.city.replace(/([A-Z])/g, ' $1').trim()}, {hotel.country}</h3>
-                                <h4>${total} for 2 room </h4>
+                                <h4>${total} for {room} room </h4>
                                 <p>${hotel.price} /night /room</p>
                                 <p>All including taxes and fees</p>
                                 <button className="hotelCardButton" value={hotel.name} onClick={handleCheck} >See available rooms</button>

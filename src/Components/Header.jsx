@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className="header">
       <div className="leftHeader">
-        <a href="/"><h1>@homestay</h1></a><img src={logo}/>
+        <a href="/"><h1>@homeStay</h1></a><img src={logo}/>
       </div>
       <div className="rightHeader">
         <a href="#">Sign in</a>

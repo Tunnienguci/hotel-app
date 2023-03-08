@@ -110,7 +110,7 @@ function Homepage() {
         <div className="homepage">
             <div className="header">
                 <div className="leftHeader">
-                    <h1>@homestay</h1> <img src={logo}></img>
+                    <h1>@homeStay</h1> <img src={logo}></img>
                 </div>
                 <div className="rightHeader">
                     <a href="#">Sign in</a>
