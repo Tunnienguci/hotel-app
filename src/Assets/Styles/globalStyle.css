@@ -3,7 +3,7 @@
     --secondary-color: #fff;
 }
 
-.header .leftHeader {
+.header .leftHeader{
     display: flex;
     flex-direction: row;
     justify-content: space-around;

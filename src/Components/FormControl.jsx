@@ -19,7 +19,7 @@ const provinceData = [
 ];
 
 const cityData = {
-    Vietnam: ["Hanoi", "Ho Chi Minh", "Da Nang", "Sapa", "Nha Trang", "Hue", "Phu Quoc"],
+    Vietnam: ["Hanoi", "HoChiMinh", "DaNang", "Sapa", "NhaTrang", "Hue", "PhuQuoc"],
     Thailand: ["Bangkok", "Pattaya", "Phuket"],
     Malaysia: ["Kuala Lumpur", "Penang", "Langkawi"],
     Singapore: ["Singapore"],
@@ -115,7 +115,7 @@ function FormControl() {
                     }}
                     onChange={onsecondCityChange1}
                     options={citiesData.map((city) => ({
-                        label: city,
+                        label: city.replace(/([A-Z])/g, ' $1').trim(),
                         value: city,
                     }))}
                 />

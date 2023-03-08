@@ -55,7 +55,7 @@
     },
     {
         "name": "Landmark 81 Hotel",
-        "city": "Ho Chi Minh",
+        "city": "HoChiMinh",
         "country": "Vietnam",
         "price": 89,
         "rate": 4.4,
@@ -64,7 +64,7 @@
     },
     {
         "name": "Rex Hotel Saigon",
-        "city": "Ho Chi Minh",
+        "city": "HoChiMinh",
         "country": "Vietnam",
         "price": 123,
         "rate": 4.4,
@@ -73,7 +73,7 @@
     },
     {
         "name": "Majestic Saigon Hotel",
-        "city": "Ho Chi Minh",
+        "city": "HoChiMinh",
         "country": "Vietnam",
         "price": 150,
         "rate": 4.2,
@@ -82,7 +82,7 @@
     },
     {
         "name": "Caravelle Hotel Saigon",
-        "city": "Ho Chi Minh",
+        "city": "HoChiMinh",
         "country": "Vietnam",
         "price": 96,
         "rate": 4.3,
@@ -91,7 +91,7 @@
     },
     {
         "name": "Renaissance Riverside",
-        "city": "Ho Chi Minh",
+        "city": "HoChiMinh",
         "country": "Vietnam",
         "price": 190,
         "rate": 4.1,
@@ -100,7 +100,7 @@
     },
     {
         "name": "Muong Thanh Luxury DaNang Hotel",
-        "city": "Da Nang",
+        "city": "DaNang",
         "country": "Vietnam",
         "price": 95,
         "rate": 4.3,
@@ -109,7 +109,7 @@
     },
     {
         "name": "Pullman DaNang Beach Resort",
-        "city": "Da Nang",
+        "city": "DaNang",
         "country": "Vietnam",
         "price": 210,
         "rate": 4.1,
@@ -118,7 +118,7 @@
     },
     {
         "name": "Novotel DaNang Premier Han River",
-        "city": "Da Nang",
+        "city": "DaNang",
         "country": "Vietnam",
         "price": 105,
         "rate": 4.3,
@@ -127,7 +127,7 @@
     },
     {
         "name": "The Grand DaNang Hotel",
-        "city": "Da Nang",
+        "city": "DaNang",
         "country": "Vietnam",
         "price": 80,
         "rate": 4.3,
@@ -136,7 +136,7 @@
     },
     {
         "name": "The Anam",
-        "city": "Da Nang",
+        "city": "DaNang",
         "country": "Vietnam",
         "price": 87,
         "rate": 4.3,
@@ -145,7 +145,7 @@
     },
     {
         "name": "The Nam Hai",
-        "city": "Da Nang",
+        "city": "DaNang",
         "country": "Vietnam",
         "price": 121,
         "rate": 4.3,
@@ -153,8 +153,8 @@
         "image": "dn6"
     },
     {
-        "name": "Vinpearl Resort & Spa Nha Trang",
-        "city": "Nha Trang",
+        "name": "Vinpearl Resort & Spa NhaTrang",
+        "city": "NhaTrang",
         "country": "Vietnam",
         "price": 99,
         "rate": 4.3,
@@ -162,8 +162,8 @@
         "image": "nt1"
     },
     {
-        "name": "Pullman Nha Trang Hotel",
-        "city": "Nha Trang",
+        "name": "Pullman NhaTrang Hotel",
+        "city": "NhaTrang",
         "country": "Vietnam",
         "price": 98,
         "rate": 4.3,
@@ -171,8 +171,8 @@
         "image": "nt2"
     },
     {
-        "name": "InterContinental Nha Trang",
-        "city": "Nha Trang",
+        "name": "InterContinental NhaTrang",
+        "city": "NhaTrang",
         "country": "Vietnam",
         "price": 110,
         "rate": 4.3,
@@ -181,7 +181,7 @@
     },
     {
         "name": "Vinpearl Resort & Spa Phu Quoc",
-        "city": "Phu Quoc",
+        "city": "PhuQuoc",
         "country": "Vietnam",
         "price": 130,
         "rate": 4.5,
@@ -190,7 +190,7 @@
     },
     {
         "name": "Pullman Phu Quoc Beach Resort",
-        "city": "Phu Quoc",
+        "city": "PhuQuoc",
         "country": "Vietnam",
         "price": 150,
         "rate": 4.5,
@@ -199,7 +199,7 @@
     },
     {
         "name": "InterContinental Phu Quoc Long Beach Resort",
-        "city": "Phu Quoc",
+        "city": "PhuQuoc",
         "country": "Vietnam",
         "price": 110,
         "rate": 4.5,

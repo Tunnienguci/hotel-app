@@ -28,16 +28,16 @@ const provinceData = [
 ];
 
 const cityData = {
-    Vietnam: ["Hanoi", "Ho Chi Minh", "Da Nang", "Sapa", "Nha Trang", "Hue", "Phu Quoc"],
+    Vietnam: ["Hanoi", "HoChiMinh", "DaNang", "Sapa", "NhaTrang", "Hue", "PhuQuoc"],
     Thailand: ["Bangkok", "Pattaya", "Phuket"],
-    Malaysia: ["Kuala Lumpur", "Penang", "Langkawi"],
+    Malaysia: ["KualaLumpur", "Penang", "Langkawi"],
     Singapore: ["Singapore"],
-    Laos: ["Vientiane", "Luang Prabang", "Pakse"],
+    Laos: ["Vientiane", "LuangPrabang", "Pakse"],
     Indonesia: ["Bali", "Jakarta", "Yogyakarta"],
     Myanmar: ["Yangon", "Mandalay", "Bagan"],
-    Cambodia: ["Siem Reap", "Phnom Penh", "Sihanoukville"],
+    Cambodia: ["SiemReap", "PhnomPenh", "Sihanoukville"],
     Philippines: ["Manila", "Cebu", "Boracay"],
-    Brunei: ["Bandar Seri Begawan"],
+    Brunei: ["BandarSeriBegawan"],
 };
 
 const adult = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -144,7 +144,7 @@ function Homepage() {
                             }}
                             onChange={onsecondCityChange1}
                             options={citiesData.map((city) => ({
-                                label: city,
+                                label: city.replace(/([A-Z])/g, ' $1').trim(),
                                 value: city,
                             }))}
                         />

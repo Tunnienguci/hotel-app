@@ -6,6 +6,8 @@ import { Card } from 'antd';
 import FormControl from '../Components/FormControl';
 import dataHotel from '../Data/hotel.json';
 
+
+
 // import all images want to use in this page here 
 import noData from '../Assets/Images/giphy.gif';
 
@@ -45,8 +47,6 @@ const hotel = dataHotel;
 
 function Hotel() {
 
-
-
     const url = window.location.href;
     const urlStartSplit = url.split('&room='); //Split url by adult
     const urlEndSplit = urlStartSplit[1].split('&checkin='); //Split url by checkin
@@ -58,8 +58,26 @@ function Hotel() {
     const days = (Date.parse(checkout) - Date.parse(checkin)) / 86400000; //Calculate days
     const hotelFilter = hotel.filter((hotel) => hotel.city === city);
 
-    // Bỏ dấu %20 trong chuỗi string thành dấu khoảng trắng
-    const cityFormat = city.replace(/%20/g, " ");
+    //Thêm khoảng trắng vào trước các chữ in hoa của city name
+    const cityFormat = city.replace(/([A-Z])/g, ' $1').trim();
+
+    const handleCheck = (e) => {
+        const hotelRoom = {
+            city: city,
+            room: room,
+            checkin: checkin,
+            checkout: checkout,
+            hotel: e.target.value,
+            total: total,
+        };
+        localStorage.setItem('hotelRoom', JSON.stringify(hotelRoom));
+        // Tạo link đến trang booking khi click vào button book
+        window.location.href = `/detail?hotel=${e.target.value}&room=${room}&checkin=${checkin}&checkout=${checkout}`;
+    }
+
+    
+   
+    
     return (
         <div className="hotel">
             <Header />
@@ -78,8 +96,9 @@ function Hotel() {
                                     <th colspan="2">Price Group</th>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="upto100" name="upto100" value="100" /></td>
-                                    <td><label for="upto100">Less $100</label></td>
+                                    <td><input type="checkbox" id="0to100" name="0to100" value="100" /></td>
+                                    <td><label for="0to100"> $0 - $100</label></td>
+
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" id="200to400" name="200to400" value="400" /></td>
@@ -128,7 +147,7 @@ function Hotel() {
                                     <td><label for="5star">5 star</label></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox" id="4star" name="4star" value="4star" /></td>
+                                    <td><input type="checkbox" id="4star" name="4star" value="4star"/></td>
                                     <td><label for="4star">4 star</label></td>
                                 </tr>
                                 <tr>
@@ -149,13 +168,13 @@ function Hotel() {
                 </div>
                 </div>
                 <div className="hotelList">
-                    {hotelFilter.length > 0 ? hotelFilter.map((hotel) => {
                     <div className="hotelListTitle">
                         <p>Homestay in <b>{cityFormat}</b> | Date: <b>{checkin} </b> to <b>{checkout}</b></p>
                         <p>
                             {hotelFilter.length} homestay available
                         </p>
                     </div>
+                    {hotelFilter.length > 0 ? hotelFilter.map((hotel) => {
                         total = hotel.price * days * room;
                         return (
                             <Card
@@ -165,11 +184,11 @@ function Hotel() {
                             >
                             <div className="hotelCardInfo">
                                 <h1>{hotel.name}</h1>
-                                <h3>{hotel.city}, {hotel.country}</h3>
+                                <h3>{hotel.city.replace(/([A-Z])/g, ' $1').trim()}, {hotel.country}</h3>
                                 <h4>${total} for 2 room </h4>
                                 <p>${hotel.price} /night /room</p>
                                 <p>All including taxes and fees</p>
-                                <button className="hotelCardButton">See available rooms</button>
+                                <button className="hotelCardButton" value={hotel.name} onClick={handleCheck} >See available rooms</button>
                             </div>
                             </Card>
                         )
