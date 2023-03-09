@@ -33,7 +33,7 @@ function detail() {
                 <div className='detailBodyTitle'>
                     <h1>{hotelName}</h1>
                     <h2>{item.city.replace(/([A-Z])/g, ' $1').trim()}, {item.country}</h2>
-                    <p>Rating: 5 Star hotel</p>
+                    <p>Rating: {item.rate}/5</p>
                 </div>
                 <div className='detailBodyImage'>
                     <div className='detailBodyImageLeft'>
@@ -41,18 +41,18 @@ function detail() {
                             width={700}
                             height={500}
                             src="error"
-                            fallback="https://pix10.agoda.net/hotelImages/90776/0/0721cef12bb6e35a4ba5cdc5883144c5.jpg?ca=7&ce=1&s=1024x768"
+                            fallback={item.album[0]}
                         />
                     </div>
                     <div className='detailBodyImageRight'>
                         <Image
                             width={450}
                             height={250}
-                            fallback="https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-8359432502-2x1"
+                            fallback={item.album[1]}
                         /><Image
                             width={450}
                             height={250}
-                            fallback="https://digital.ihg.com/is/image/ihg/intercontinental-hanoi-8359432536-2x1"
+                            fallback={item.album[2]}
                         />
                     </div>
                 </div>

@@ -6,7 +6,12 @@
         "price": 175,
         "rate": 4.5,
         "cancel": "Free cancellation",
-        "image": "hn1"
+        "image": "hn1",
+        "album" : [
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/83/2016/12/06083033/03-Standard-room-3-390x250.jpg",
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/83/2016/12/27075602/Pullman-Hanoi-Superior-Room-2-390x250.jpg",
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/83/2020/02/14125335/12-Deluxe-room-King-Bed-390x250.jpg"
+        ]
     },
     {
         "name": "Novotel Hanoi Hotel",
@@ -15,7 +20,12 @@
         "price": 183,
         "rate": 4.7,
         "cancel": "Free cancellation",
-        "image": "hn2"
+        "image": "hn2",
+        "album" : [
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/215/2019/12/09091555/Rm-A-K_view02_SUP.jpg",
+            "https://ticotravel.com.vn/wp-content/uploads/2022/03/Novotel-thai-ha-8.jpg",
+            "https://pix10.agoda.net/hotelImages/6542427/-1/22033de7f7a274820c3379ba92b7dc68.jpg?ca=15&ce=1&s=1024x768"
+        ]
     },
     {
         "name": "Sheraton Residence Hanoi",
@@ -24,7 +34,12 @@
         "price": 118,
         "rate": 5.0,
         "cancel": "Free cancellation",
-        "image": "hn3"
+        "image": "hn3",
+        "album" : [
+            "https://cf.bstatic.com/images/hotel/max1024x768/199/199208397.jpg",
+            "https://cache.marriott.com/content/dam/marriott-renditions/SGNSI/sgnsi-king-guestroom-4656-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+            "https://cdn1.ivivu.com/iVivu/2020/03/18/14/187586588-800x450.jpg"
+        ]
     },
     {
         "name": "Daewoo Hotel Hanoi",
@@ -33,7 +48,12 @@
         "price": 120,
         "rate": 4.1,
         "cancel": "Free cancellation",
-        "image": "hn4"
+        "image": "hn4",
+        "album" : [
+            "https://image-tc.galaxy.tf/wijpeg-5w28iee9g813o0w56j74reemf/luxury-hanoi-accommodation-with-exceptional-services_standard.jpg?crop=112%2C0%2C1777%2C1333",
+            "https://image-tc.galaxy.tf/wijpeg-9q7y45tctf79tq2o00storrv7/grand-deluxe-2_standard.jpg?crop=112%2C0%2C1777%2C1333",
+            "https://pix10.agoda.net/hotelImages/10960/-1/71ca3fadf48647594964c013c9ccb731.jpg?ca=28&ce=0&s=1024x768"
+        ]
     },
     {
         "name": "JW Marriott Hotel Hanoi",
@@ -42,7 +62,12 @@
         "price": 140,
         "rate": 4.9,
         "cancel": "Free cancellation",
-        "image": "hn5"
+        "image": "hn5",
+        "album" : [
+            "https://cdn1.ivivu.com/iVivu/2016/11/17/15/khach-san-jww-marriott-ha-noi-21-800x450.png",
+            "https://cdn1.ivivu.com/iVivu/2016/11/17/15/khach-san-jww-marriott-ha-noi-22-800x450.png",
+            "https://cdn1.ivivu.com/iVivu/2016/11/17/15/khach-san-jww-marriott-ha-noi-15-800x450.png"
+        ]
     },
     {
         "name": "InterContinental Hanoi Westlake",
@@ -51,7 +76,12 @@
         "price": 131,
         "rate": 4.9,
         "cancel": "Free cancellation",
-        "image": "hn6"
+        "image": "hn6",
+        "album" : [
+            "https://cdn2.vietnambooking.com/wp-content/uploads/hotel_pro/hotel_334909/4bd84a7b5f1f1f34c5015341f6ea5a85.jpg",
+            "https://cdn1.ivivu.com/iVivu/2020/06/19/19/15-800x450.jpg",
+            "https://cdn1.ivivu.com/iVivu/2020/06/19/19/3-800x450.jpg"
+        ]
     },
     {
         "name": "Landmark 81 Hotel",
@@ -60,7 +90,12 @@
         "price": 89,
         "rate": 4.4,
         "cancel": "Free cancellation",
-        "image": "hcm1"
+        "image": "hcm1",
+        "album" : [
+            "https://s7d1.scene7.com/is/image/marriotts7prod/ak-sgnak-premier-king-city-view-35637:Wide-Hor?wid=1336&fit=constrain",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/c5/43/f4/vinpearl-luxury-landmark.jpg?w=700&h=-1&s=1",
+            "https://statics.vinpearl.com/Vinpearl%20Luxury%20Landmark%2081-phong_1636124875.jpg"
+        ]
     },
     {
         "name": "Rex Hotel Saigon",
@@ -69,7 +104,12 @@
         "price": 123,
         "rate": 4.4,
         "cancel": "Free cancellation",
-        "image": "hcm2"
+        "image": "hcm2",
+        "album" : [
+            "https://d2ile4x3f22snf.cloudfront.net/wp-content/uploads/sites/174/2017/08/10062641/Family-Governor-Suite-21-700x490.jpg",
+            "https://d2ile4x3f22snf.cloudfront.net/wp-content/uploads/sites/174/2017/08/10062002/Governor-Suite-21-700x490.jpg",
+            "https://cf.bstatic.com/images/hotel/max1024x768/224/22431722.jpg"   
+        ]
     },
     {
         "name": "Majestic Saigon Hotel",
@@ -78,7 +118,12 @@
         "price": 150,
         "rate": 4.2,
         "cancel": "Flexible cancellation",
-        "image": "hcm3"
+        "image": "hcm3",
+        "album" : [
+            "https://www.kayak.com/rimg/himg/ba/c3/40/expediav2-86048-a320a0-439215.jpg?width=1366&height=768&crop=true",
+            "https://images.trvl-media.com/lodging/1000000/490000/481700/481665/9a50f885.jpg?impolicy=fcrop&w=670&h=385&p=1&q=medium",
+            "https://cf.bstatic.com/xdata/images/hotel/max1280x900/266205043.jpg?k=a48bbd766a13579dffa626b8e796ba18c3c036c1d41e1decd52930633f212ec6&o=&hp=1"
+        ]
     },
     {
         "name": "Caravelle Hotel Saigon",
@@ -87,7 +132,12 @@
         "price": 96,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "hcm4"
+        "image": "hcm4",
+        "album" : [
+            "https://www.caravellehotel.com/wp-content/uploads/Caravelle-Saigon-Deluxe-rooms.jpg",
+            "https://www.caravellehotel.com/wp-content/uploads/Caravelle-Saigon-Presidential-Suite-1.jpg",
+            "https://media.urbanistnetwork.com/saigoneer/xplr-images/premium-content/Caravelle-26Oct18/caravelle1-2h.jpg"
+        ]
     },
     {
         "name": "Renaissance Riverside",
@@ -96,7 +146,12 @@
         "price": 190,
         "rate": 4.1,
         "cancel": "Flexible cancellation",
-        "image": "hcm5"
+        "image": "hcm5",
+        "album" : [
+            "https://cache.marriott.com/content/dam/marriott-renditions/SGNBR/sgnbr-suite-0143-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+            "https://pix10.agoda.net/hotelImages/9195/-1/2fed0929c7f503d5e5559f0e941372f6.jpg?ca=18&ce=1&s=1024x768",
+            "https://s7d1.scene7.com/is/image/marriotts7prod/br-sgnbr-executive-studio-11630:Wide-Hor?wid=1336&fit=constrain"
+        ]
     },
     {
         "name": "Muong Thanh Luxury DaNang Hotel",
@@ -105,7 +160,12 @@
         "price": 95,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "dn1"
+        "image": "dn1",
+        "album" : [
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/ce/42/9c/khach-s-n-mu-ng-thanh.jpg?w=700&h=-1&s=1",
+            "https://pix10.agoda.net/hotelImages/149036/3187434/7078296efce1315e015e34fab8e939c9.jpg?ca=16&ce=1&s=1024x768",
+            "https://ik.imagekit.io/tvlk/apr-asset/wFpCiHwtf6+MS12jwg9Bd9lLT7IIimqz-4xkjap5aqWPBEhxYInvGPOGLePMnCUx/HotelInfo/hotelImage.aspx?id=9434819&full=1&_src=imagekit&tr=c-at_max,h-488,q-40,w-768"   
+        ]
     },
     {
         "name": "Pullman DaNang Beach Resort",
@@ -114,7 +174,13 @@
         "price": 210,
         "rate": 4.1,
         "cancel": "Flexible cancellation",
-        "image": "dn2"
+        "image": "dn2",
+        "album" : 
+        [
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/86/2018/12/18031437/deluxe-king-bed-room-cottage-at-pullman-danang-beach-resort-vietnam-5-star-hotel2.jpg",
+            "https://cf.bstatic.com/xdata/images/hotel/max1280x900/371614943.jpg?k=27e679e152cb3fe872840ec8052d75b8a0d97f6fb69ce482bb5e86093ed42623&o=&hp=1",
+            "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/86/2019/01/30062358/Pullman-FamilySuite-Angle01-Family-Suite-at-Pullman-Danang-Beach-Resort-5-star-hotel.jpg"
+        ]
     },
     {
         "name": "Novotel DaNang Premier Han River",
@@ -123,16 +189,26 @@
         "price": 105,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "dn3"
+        "image": "dn3",
+        "album" : [
+           "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/72/2019/06/11101016/heroshot-4.jpg",
+           "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/72/2019/06/11140246/heroshot-11.jpg",
+           "https://ik.imgkit.net/3vlqs5axxjf/external/http://www.cfmedia.vfmleonardo.com/imageRepo/5/0/89/540/858/8287_ho_00_p_3000x2250_O.jpg?tr=w-1200%2Cfo-auto%2Cdi-ami-fallback.png"
+        ]
     },
     {
-        "name": "The Grand DaNang Hotel",
+        "name": "Sheraton Grand DaNang Hotel",
         "city": "DaNang",
         "country": "Vietnam",
         "price": 80,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "dn4"
+        "image": "dn4",
+        "album": [
+            "https://cache.marriott.com/content/dam/marriott-renditions/DADSI/dadsi-king-guestroom-4204-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+            "https://images.trvl-media.com/lodging/22000000/21950000/21943300/21943289/33e047eb.jpg?impolicy=fcrop&w=670&h=385&p=1&q=medium",
+            "https://www.marriott.com/content/dam/marriott-hws/sheraton/apec/dadsi/en/hotel-views/dadsi-suite-living-area-4306-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*"
+        ]
     },
     {
         "name": "The Anam",
@@ -141,7 +217,12 @@
         "price": 87,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "dn5"
+        "image": "dn5",
+        "album": [
+            "https://images.squarespace-cdn.com/content/v1/5c9e66e1d7819e21e09450be/1670527473952-UZF9TZCI0X1XT8VAF2E5/the-anam.jpg",
+            "https://images.squarespace-cdn.com/content/v1/5c9e66e1d7819e21e09450be/1562952185621-UBH256WNHO39N2LFDHFD/2_03-The-Anam---Villas---Private-Pool.jpg?format=2500w",
+            "https://images.squarespace-cdn.com/content/v1/5c9e66e1d7819e21e09450be/1670527350165-M9LRZVQHPNRRHAXJV95D/29+The+Anam+-+Lang+Viet+Restaurant+II.jpg"
+        ]
     },
     {
         "name": "The Nam Hai",
@@ -150,7 +231,12 @@
         "price": 121,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "dn6"
+        "image": "dn6",
+        "album" : [
+            "https://cdn2.vietnambooking.com/wp-content/uploads/hotel_pro/hotel_355711/596d869abb8800cf08294d9d7974326a.jpg",
+            "https://cdn1.ivivu.com/iVivu/2021/04/01/18/s-nmh-002-cr-800x450.jpg",
+            "https://forbes.vn/wp-content/uploads/2022/07/12.png"
+        ]
     },
     {
         "name": "Vinpearl Resort & Spa NhaTrang",
@@ -159,16 +245,26 @@
         "price": 99,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "nt1"
+        "image": "nt1",
+        "album" : [
+            "https://statics.vinpearl.com/styles/images_1600_x_900/public/2021_11/VPRSNTB%20Facade6_1636040261.jpg.webp?itok=lB6EyDVY",
+            "https://statics.vinpearl.com/styles/images_1600_x_900/public/2021_11/VPRSBYNT_10_1636040275.jpg.webp?itok=2zUIJqhX",
+            "https://bookingviet.info/wp-content/uploads/2020/01/vinpearl-resort-34-2.jpg"
+        ]
     },
     {
-        "name": "Pullman NhaTrang Hotel",
+        "name": "Six Senses Ninh Van Bay",
         "city": "NhaTrang",
         "country": "Vietnam",
         "price": 98,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "nt2"
+        "image": "nt2",
+        "album": [
+            "https://media.cntraveler.com/photos/615dc9542f713973a957f4d5/16:9/w_2560%2Cc_limit/Six%2520Senses%2520Ninh%2520Van%2520Bay_Water_Pool_Villa_Bedroom_%255B377-ORIGINAL%255D%2520copy.jpg",
+            "https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2020/05/Review-Six-Senses-Ninh-Van-Bay-1.jpg",
+            "https://en.tgroup.vn/uploads/images/hotel/hotel-nha-trang/six-sense-ninh-van-bay-resort-tgroup-travel-4.jpg"
+        ]
     },
     {
         "name": "InterContinental NhaTrang",
@@ -177,7 +273,12 @@
         "price": 110,
         "rate": 4.3,
         "cancel": "Flexible cancellation",
-        "image": "nt3"
+        "image": "nt3",
+        "album" : [
+            "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/28038759.jpg?k=e713c05e5020e92f1ae294d7d95760d86b20629da29578cefc6770ca1660976e&o=",
+            "https://pix10.agoda.net/hotelImages/564/564356/564356_14033113430018913139.jpg?ca=2&ce=1&s=1024x768",
+            "https://q-xx.bstatic.com/xdata/images/hotel/840x460/400690452.jpg?k=a15d6cb7bb45ecb89c2357adb054459576cb83456d9964d6731ac90b3ca2c0b4&o="
+        ]
     },
     {
         "name": "Vinpearl Resort & Spa Phu Quoc",
@@ -186,7 +287,12 @@
         "price": 130,
         "rate": 4.5,
         "cancel": "Flexible cancellation",
-        "image": "pq1"
+        "image": "pq1",
+        "album": [
+            "https://media.mia.vn/uploads/blog-du-lich/vinpearl-resort-spa-phu-quoc-resort-phu-quoc-5-sao-dam-loi-kien-truc-a-dong-1613957140.jpg",
+            "https://vinpearlresortvietnam.com/wp-content/uploads/villa_3-bedroom_ocean_view_vinpearl_phuquoc_1.jpg",
+            "https://sayhi.vn/blog/wp-content/uploads/2020/03/vinpearl-discovery-2-phu-quoc-review-5.jpg"   
+        ]
     },
     {
         "name": "Pullman Phu Quoc Beach Resort",
@@ -195,7 +301,12 @@
         "price": 150,
         "rate": 4.5,
         "cancel": "Flexible cancellation",
-        "image": "pq2"
+        "image": "pq2",
+        "album" : [
+            "https://pullmanphuquoc.com/wp-content/uploads/sites/225/2020/03/2115_SuperiorKing_1.jpg",
+            "http://pullmanphuquoc.com/wp-content/uploads/sites/225/2022/05/Exrerior_8.jpg",
+            "https://cdn1.ivivu.com/iVivu/2020/10/19/18/49665745417-e776788793-o-800x450.jpg"
+        ]
     },
     {
         "name": "InterContinental Phu Quoc Long Beach Resort",
@@ -204,7 +315,12 @@
         "price": 110,
         "rate": 4.5,
         "cancel": "Flexible cancellation",
-        "image": "pq3"
+        "image": "pq3",
+        "album": [
+            "https://travelsandculture.com/wp-content/uploads/2019/04/Copy-of-4-Bed-Room-Villa-Master-Room-e1556954666328.jpg",
+            "https://phuquoc.intercontinental.com/uploads/phuquoc/homepage/Sunset%20View%20from%20Resort%20%26%20Ombra%20-%2016x9.jpg",
+            "https://pix10.agoda.net/hotelImages/3648660/-1/c0766870b144d984512c57e2bcd7dc6b.jpg?ca=13&ce=1&s=1024x768"
+        ]
     },
     {
         "name": "Bamboo Hotel Sapa",
@@ -213,7 +329,12 @@
         "price": 65,
         "rate": 3.5,
         "cancel": "Flexible cancellation",
-        "image": "sp1"
+        "image": "sp1",
+        "album":[
+            "https://q-xx.bstatic.com/xdata/images/hotel/840x460/309554663.jpg?k=18a7297adb3ccb1c9a31b3b20b2d06f46fcd386c2ec702c894dd98142c49fc31&o=",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxuDEsyDE5xNFxk-HipgMB6o5mYhJqEcs857hSD3xS_DrZcEwZzq_S2jFJCBeNIhh0t-8&usqp=CAU",
+            "https://bamboosapahotel.com.vn/wp-content/uploads/2022/09/Superior-Mountain-View-1.jpg"
+        ]
     },
     {
         "name": "Paos Hotel Sapa",
@@ -222,7 +343,12 @@
         "price": 89,
         "rate": 4.2,
         "cancel": "Flexible cancellation",
-        "image": "sp2"
+        "image": "sp2",
+        "album":[
+            "https://cdn.ostrovok.ru/t/1200x616/content/96/65/9665f302444538ff23ee7454558bdb7be468ee5b.jpeg",
+            "http://pix10.agoda.net/hotelImages/2607925/-1/80705aef282f3e6b66b89f369833395c.jpg?ca=23&ce=0&s=768x1024",
+            "https://paoshotel.com/files/images/Room/upper/Double_2.jpg"
+        ]
     },
     {
         "name": "KK Hotel Sapa",
@@ -231,7 +357,12 @@
         "price": 69,
         "rate": 4.1,
         "cancel": "Free cancellation",
-        "image": "sp3"
+        "image": "sp3",
+        "album":[
+            "https://kksapahotel.com/uploads/images/news/An/VQK_6796-min.jpg",
+            "https://ticotravel.com.vn/wp-content/uploads/2022/01/kk-sapa-hotel-1-1.jpg",
+            "https://kksapahotel.com/uploads/images/room/Family.jpg"
+        ]
     },
     {
         "name": "Vinpearl Hue Resort & Spa",
@@ -240,6 +371,11 @@
         "price": 79,
         "rate": 4.7,
         "cancel": "Free cancellation",
-        "image": "hu1"
+        "image": "hu1",
+        "album":[
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/ae/fe/93/melia-vinpearl-hue.jpg?w=1200&h=-1&s=1",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/ae/fe/ae/melia-vinpearl-hue.jpg?w=700&h=-1&s=1",
+            "https://statics.vinpearl.com/vinpearl-hotel-hue-3_1632489541.jpg"
+        ]
     }
 ]
