@@ -9,7 +9,7 @@ I will answer all your questions, and I pledge that the code ideas and source co
 ## Technical
 - ReactJS
 - Ant Design
-
+- Firebase
 
 ## Installation with packages used
 
