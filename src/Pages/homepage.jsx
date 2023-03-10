@@ -56,6 +56,11 @@ const room = {
 
 
 function Homepage() {
+    const Logout = () => {
+        localStorage.clear();
+        window.location.href = "/";
+    }
+
     const [dates, setDates] = useState(null);
     const [value, setValue] = useState(null);
     const minDate = new Date();
@@ -118,7 +123,7 @@ function Homepage() {
                             <Avatar size={30} src={localStorage.getItem("photo")}></Avatar>
                             <a href="/mytrip">My Trip</a>
                             <a id="nameTag" href="">{localStorage.getItem("name")}</a>
-                            <a href="/logout">Logout</a>
+                            <a onClick={Logout}>Logout</a>
                         </div>
                     ) : (
                         <div className="user">

@@ -46,3 +46,9 @@ const signInWithGoogle = () => {
         });
 }
 export default signInWithGoogle;
+
+export const Logout = () => {
+    localStorage.clear();
+    window.location.href = "/";
+}
+

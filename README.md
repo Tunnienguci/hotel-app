@@ -42,3 +42,6 @@ I will answer all your questions, and I pledge that the code ideas and source co
 
 ## Copyright
 Copyright © 2022 Tunnienguci. All rights reserved.
+
+## Interfaces
+<img src="/Capture.PNG">

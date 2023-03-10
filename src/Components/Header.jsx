@@ -5,6 +5,10 @@ import { Avatar } from 'antd';
 // Images
 import logo from "../Assets/Images/logo.png";
 function Header() {
+  const Logout = () => {
+    localStorage.clear();
+    window.location.href = "/";
+}
   return (
     <div className="header">
       <div className="leftHeader">
@@ -16,7 +20,7 @@ function Header() {
             <Avatar size={30} src={localStorage.getItem("photo")}></Avatar>
             <a href="/mytrip">My Trip</a>
             <a id="nameTag" href="">{localStorage.getItem("name")}</a>
-            <a href="/logout">Logout</a>
+            <a onClick={Logout}>Logout</a>
           </div>
         ) : (
           <div className="user">
