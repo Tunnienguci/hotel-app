@@ -1,0 +1,26 @@
+.myTrip{
+    width: 100%;
+}
+
+.myTrip-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.myTrip-content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2%;
+}
+
+.tableData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+}

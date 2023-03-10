@@ -46,7 +46,20 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    width: 10%;
+    width: 20%;
+}
+
+#nameTag{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.header .rightHeader .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .header .ant-select-selector{
@@ -117,3 +130,74 @@
     width: 8rem;
 }
 
+/* Footer */
+.footer{
+    width: 100%;
+    background-color: #000;
+    color: var(--secondary-color);
+    bottom: 0;
+    position: fixed;
+}
+
+.footer .footer-head{
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #000;
+    color: var(--secondary-color);
+}
+
+.footer .footer-head ul li{
+    list-style: none;
+    margin: 0 1%;
+    padding: 3%;
+    font-weight: 300;
+    text-align: left;
+}
+
+.footer .footer-head h3{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+    padding: 5%;
+    text-align: left;
+}
+
+.footer .footer-head .account{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.footer .footer-head .about{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.footer .footer-head .contact{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.footer .footer-head .social{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.footer .footer-bottom{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    color: var(--secondary-color);
+}

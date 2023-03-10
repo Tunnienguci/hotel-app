@@ -159,8 +159,22 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
-    width: 10%;
+    width: 20%;
 }
+
+.homepage .header .rightHeader .user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#nameTag{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 /* Control */
 .homepage  .formHomepage{
     display: flex;

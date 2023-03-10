@@ -11,6 +11,7 @@ import "../Assets/Styles/homepage.css";
 import { DatePicker, Space } from "antd";
 import { Select } from "antd";
 import logo from "../Assets/Images/logo.png";
+import { Avatar } from 'antd';
 
 const { RangePicker } = DatePicker;
 
@@ -55,7 +56,6 @@ const room = {
 
 
 function Homepage() {
-
     const [dates, setDates] = useState(null);
     const [value, setValue] = useState(null);
     const minDate = new Date();
@@ -113,7 +113,18 @@ function Homepage() {
                     <h1>@homeStay</h1> <img src={logo}></img>
                 </div>
                 <div className="rightHeader">
-                    <a href="#">Sign in</a>
+                    {localStorage.getItem("user") ? (
+                        <div className="user">
+                            <Avatar size={30} src={localStorage.getItem("photo")}></Avatar>
+                            <a href="/mytrip">My Trip</a>
+                            <a id="nameTag" href="">{localStorage.getItem("name")}</a>
+                            <a href="/logout">Logout</a>
+                        </div>
+                    ) : (
+                        <div className="user">
+                            <a href="/login">Login</a>
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="centerHomepage">
